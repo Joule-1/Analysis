@@ -4,7 +4,7 @@ from telethon import TelegramClient, functions, types
 
 # Reading Configs
 config = configparser.ConfigParser()
-config.read("C:\\Users\\pande\\Downloads\\telegram-analysis-master\\telegram-analysis-master\\config.ini")
+config.read("src/config/config.ini")
 
 # Setting configuration values
 api_id = config['Telegram']['api_id']

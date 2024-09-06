@@ -19,7 +19,7 @@ def message_retrieval():
 
     # Reading Configs
     config = configparser.ConfigParser()
-    config.read("telegram-analysis\\src\\config\\config.ini")
+    config.read("src/config/config.ini")
 
     # Setting configuration values
     api_id = config['Telegram']['api_id']
@@ -68,7 +68,6 @@ def message_retrieval():
                 print(f"An error occurred: {e}")
                 break
 
-    # telegram-analysis\src\data\Testing.json
         try:
             with open(f"telegram-analysis\\src\\data\\{filename}", 'w') as outfile:
                 json.dump(all_messages, outfile, cls=DateTimeEncoder)

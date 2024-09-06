@@ -1,11 +1,10 @@
-import asyncio
 import configparser
-from telethon import TelegramClient, functions, types
+from telethon import TelegramClient 
 from telethon.tl.functions.channels import JoinChannelRequest
 
 # Reading Configs
 config = configparser.ConfigParser()
-config.read("telegram-analysis\\src\\config\\config.ini")
+config.read("src/config/config.ini")
 
 # Setting configuration values
 api_id = config['Telegram']['api_id']

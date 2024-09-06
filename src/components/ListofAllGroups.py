@@ -4,7 +4,7 @@ def group_list():
     from telethon import TelegramClient, functions, types
 
     config = configparser.ConfigParser()
-    config.read("telegram-analysis\\src\\config\\config.ini")
+    config.read("src/config/config.ini")
 
     api_id = config['Telegram']['api_id']
     api_hash = config['Telegram']['api_hash']
